@@ -1,14 +1,18 @@
-# Hook Landing Page Theme
+# [Global: HTML5 website template](http://buckymaler.com/global)
 
-This landing page theme is built on [shorthand css framework](https://github.com/shorthandcss/shorthand)
+### [Featured on Freebiesbug](http://freebiesbug.com/psd-freebies/global-futuristic-one-page-portfolio-psd-html/)
 
-![preview](/preview.jpg)
+Global is a modern and sleek website template crafted for professionals in the creative industry. Global can serve as a single page portfolio or be easily modified to serve as the perfect beginning for a hip creative agency.
 
-## Credit
+The original PSD is included and was provided by [Sergey Melnik](https://www.behance.net/SergeyMelnik).
 
-* Picture [unsplash](https://unsplash.com)
-* Icons [feathericons](https://feathericons.com)
+This project was developed with HTML5, Sass, jQuery, and Hammer.js.
 
-## LICENSE
+Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
-The theme is available under the MIT License.
+[LIVE PREVIEW](http://buckymaler.com/global)
+
+## Misc:
+
+* Follow Bucky: [Twitter](https://twitter.com/BuckyMaler), [GitHub](https://github.com/BuckyMaler)
+* Follow Sergey: [Dribbble](https://dribbble.com/sergeymelnik), [Bēhance](https://www.behance.net/SergeyMelnik)
