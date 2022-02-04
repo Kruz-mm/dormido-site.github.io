@@ -1,107 +1,176 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | zmeya</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">zmeya</div>
-      </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dormido - minecraft bedrock server</title>
+    
+    <!--all css files-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/slick.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific.pupup.css">
+<link rel="stylesheet" href="assets/css/sweet.alert.css">
+
+<link rel="stylesheet" href="assets/css/main.css"> <!-- main stylesheet -->
+<link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<!-- start .preloader -->
+<div class="preloader">
+    <div class="inner text-center">
+        <span class="preloader-spin"></span>
     </div>
-    <script>
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-      var warningBanner = document.querySelector("#unity-warning");
+</div>
+<!-- end .preloader -->
 
-      // Shows a temporary message banner/ribbon for a few seconds, or
-      // a permanent error message on top of the canvas if type=='error'.
-      // If type=='warning', a yellow highlight color is used.
-      // Modify or remove this function to customize the visually presented
-      // way that non-critical warnings and error messages are presented to the
-      // user.
-      function unityShowBanner(msg, type) {
-        function updateBannerVisibility() {
-          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-        }
-        var div = document.createElement('div');
-        div.innerHTML = msg;
-        warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
-        else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
-            warningBanner.removeChild(div);
-            updateBannerVisibility();
-          }, 5000);
-        }
-        updateBannerVisibility();
-      }
+<div class="site_wrap">
+<div class="eco--header--wraper eco--header--1">
+    <div class="eco--header--top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-4">
+                    <div class="eco--logo">
+                        <a href="index.html">Dormido</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div> <!-- end .eco-header-top -->
+    
+</div> <!-- end .eco-header-wraper -->
+<div class="eco--home--area--1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-7">
+                <div class="eco--home--content--1">
+                    <div class="eco--sec--title">
+                        <span></span>
+                        <h1>Minecraft bedrock сервер <span>Dormido</span></h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="eco--home--image--1">
+            <img src="assets/img/axolotl.png" alt="">
+        </div>
+    </div>
+</div> <!-- end .eco-home-area-1 -->
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/web.data.gz",
-        frameworkUrl: buildUrl + "/web.framework.js.gz",
-        codeUrl: buildUrl + "/web.wasm.gz",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "zmeya",
-        productVersion: "0.1",
-        showBanner: unityShowBanner,
-      };
+<div class="eco--promo--2 eco--pd--200" id="promo2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-6 col-md-8 col-md-offset-4">
+                <div class="eco--inner eco--ml-30">
+                    <div class="eco--sec--title">
+                        <span></span>
+                        <h1>Почему мы?</h1>
+                    </div>
+                    <ul class="eco--promo--list--1 eco--mt50">
+                        <li>
+                            <i class="fa fa-play"></i>
+                            Полная ваниль
+                        </li>
+                        <li>
+                            <i class="fa fa-play"></i>
+                            Мощный античит/антитулбокс
+                        </li>
+                        <li>
+                            <i class="fa fa-play"></i>
+                            Редкие вайпы
+                        </li>
+                        <li>
+                            <i class="fa fa-play"></i>
+                            Стабильный тпс
+                        </li>
+                        <li>
+                            <i class="fa fa-play"></i>
+                            Без доната
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="eco--promo--image--2">
+            <img src="assets/img/allay.png" alt="">
+        </div>
+    </div>
+</div> <!-- end .eco-promo-2 -->
+<div class="">
+   
+</div> <!-- end .eco-review-area-1 -->
+<div class="eco--feature--area--1 eco--pd--100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="eco--feature--1">
+					<div class="eco--single--feature--1">
+						<span class="eco--feature--left">01</span>
+						<div class="eco--feature--right">
+							<h3>Полная ваниль</h3>
+							<p>Все механики, все обновления, блоки, редстоун, измерения и ванильная генерация</p>
+						</div> 
+					</div> <!-- .eco-single-feature-1 -->
+					<div class="eco--single--feature--1">
+						<span class="eco--feature--left">02</span>
+						<div class="eco--feature--right">
+							<h3>Мощный античит/антитулбокс</h3>
+							<p>Антигив, анти x-ray, анти 32к и.т.д</p>
+						</div> 
+					</div> <!-- .eco-single-feature-1 -->
+					<div class="eco--single--feature--1">
+						<span class="eco--feature--left">03</span>
+						<div class="eco--feature--right">
+							<h3>Редкие вайпы</h3>
+							<p>Диск на 150гб. Зачем нам столько? Сам не знаю</p>
+						</div> 
+					</div> <!-- .eco-single-feature-1 -->
+                    <div class="eco--single--feature--1">
+						<span class="eco--feature--left">03</span>
+						<div class="eco--feature--right">
+							<h3>Стабильный тпс</h3>
+							<p>Сервер спокойно выдерживает большой онлайн (20+ человек)</p>
+						</div> 
+					</div> <!-- .eco-single-feature-1 -->
+                    <div class="eco--single--feature--1">
+						<span class="eco--feature--left">04</span>
+						<div class="eco--feature--right">
+							<h3>Без доната</h3>
+							<p>Без покупных админок, ГМок и прочей хрени</p>
+						</div> 
+					</div> <!-- .eco-single-feature-1 -->
+				</div> <!-- .eco-feature-1 -->
+			</div>
+		</div>
+        <div class="eco--feature--image--1">
+            <img src="assets/img/warden.png" alt="">
+        </div>
+	</div>
 
-      // By default Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        // Avoid draining fillrate performance on mobile devices,
-        // and default/override low DPI mode on mobile browsers.
-        config.devicePixelRatio = 1;
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-      loadingBar.style.display = "block";
 
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-    </script>
-  </body>
+</div>
+</div> <!-- end .site_wrap -->
+<!--all JavaScript Files-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/slick.min.js"></script>
+<script src="assets/js/vendor/magnific.popup.min.js"></script>
+<script src="assets/js/vendor/ajaxchimp.min.js"></script>
+<script src="assets/js/vendor/sweet.alert.min.js"></script>
+<script src="assets/js/vendor/particle.min.js"></script>
+<script src="assets/js/particle.config.js"></script>
+<script src="assets/js/vendor/slicknav.min.js"></script>
+<script src="assets/js/active.js"></script>
+</body>
+
 </html>
